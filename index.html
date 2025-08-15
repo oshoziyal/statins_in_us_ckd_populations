@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CKD Statin Poster</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html, body { margin:0; height:100%; background:#fff; }
+    .bar {
+      position: fixed; top:0; left:0; right:0; height:56px;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:0 14px; box-sizing:border-box; background:#111; color:#fff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+    .bar a { color:#fff; text-decoration:none; margin-left:12px; }
+    .wrap { position:absolute; top:56px; left:0; right:0; bottom:0; }
+    .viewer {
+      width:100%; height:100%; border:0;
+    }
+    .fallback {
+      height:100%; display:flex; align-items:center; justify-content:center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      text-align:center; padding:24px; box-sizing:border-box;
+    }
+    .btn {
+      padding:8px 12px; border:1px solid #fff; border-radius:6px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="bar">
+    <div><strong>Statin Use in CKD — Poster</strong></div>
+    <div>
+      <a class="btn" href="Poster_CKD_Statins.pdf" target="_blank" rel="noopener">Open PDF</a>
+      <a class="btn" href="Poster_CKD_Statins.pdf" download>Download</a>
+    </div>
+  </div>
+
+  <!-- PDF viewer -->
+  <div class="wrap">
+    <!-- Try native PDF rendering -->
+    <object class="viewer" data="Poster_CKD_Statins.pdf#view=FitH" type="application/pdf">
+      <!-- Fallback for browsers that block inline PDF -->
+      <div class="fallback">
+        <p>Preview unavailable. <a href="Poster_CKD_Statins.pdf" target="_blank" rel="noopener">Open the PDF</a> or <a href="Poster_CKD_Statins.pdf" download>download it</a>.</p>
+      </div>
+    </object>
+  </div>
+</body>
+</html>
